@@ -12,3 +12,18 @@ $(document).ajaxStart(function(){
 $(document).ajaxStop(function(){
   NProgress.done();
 })
+
+//登录拦截(排除掉登录页面)
+if(!location.href.indexOf("login.html")){
+  $.ajax({
+    type: "get",
+    url:"/employee/checkRootLogin",
+    dataType:"json",
+    success: function (data) {
+      console.log(data)
+      if(data.error='400'){
+        location.href="login.html"
+      }
+    }
+  })
+}
