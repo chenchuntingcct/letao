@@ -133,3 +133,19 @@ ul{
   width: 629px;
   height: 400px;
 }
+.lt_content {
+  padding: 0 15px;
+}
+.lt_content  table{
+  text-align: center;
+}
+.lt_content  table th,
+.lt_content  table td{
+  vertical-align: middle !important;
+}
+.lt_content #paginator {
+  float: right;
+}
+.modal-body {
+    color: #ca5454;
+    }
