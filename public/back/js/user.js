@@ -40,7 +40,7 @@ $(function(){
     })
   }
   //禁用 启用
-  $("tbody").off('click').on('click','.btn' ,function () {
+  $("tbody").on('click','.btn' ,function () {
     //显示模态框
     $("#userStateModel").modal("show");
       currentId = $(this).parent().data("id");
