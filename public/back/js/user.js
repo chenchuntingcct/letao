@@ -44,14 +44,15 @@ $(function(){
     //显示模态框
     $("#userStateModel").modal("show");
       currentId = $(this).parent().data("id");
-      currentState = $(this).hasClass(".btn-danger")?1:0
+      currentState = $(this).hasClass("btn-danger")?0:1
       console.log(currentId)
+      console.log(currentState)
       changeUserState ();
   })
   
   //切换用户状态
   function changeUserState () {
-    $("#submitBtn").click(function (){
+    $("#submitBtn").off("click").on("click",function (){
       console.log("我切换状态了吗")
       $.ajax({
         type: "POST",
