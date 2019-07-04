@@ -99,6 +99,7 @@ ul{
   border-left: 3px solid #006699;
 }
 .lt_main {
+  height: 1000px;
   padding-left: 180px;
   transition: all 1s;
 }
@@ -123,4 +124,12 @@ ul{
 }
 #myModal i{
   color: #A94442;
+}
+.lt_content {
+  width: 100%;
+  
+}
+.echarts_1 , .echarts_2 {
+  width: 629px;
+  height: 400px;
 }
