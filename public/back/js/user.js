@@ -6,6 +6,7 @@ $(function(){
     var currentState
     
         getUserInfo();
+        
   
   //获取表格信息
   function getUserInfo () {
